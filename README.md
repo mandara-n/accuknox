@@ -35,6 +35,7 @@ _root@frontend-deployment-677958554-qn54z:/usr/src/app# curl -s http://backend-s
 
 **Automated script to check the connection establishment:**
 _root@N-20HEPF0Y79B9:/home/mandara/qa-test# cat test_integration.sh_
+
 #!/bin/bash
 
 #Variables
