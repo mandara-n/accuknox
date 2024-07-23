@@ -37,11 +37,11 @@ _root@frontend-deployment-677958554-qn54z:/usr/src/app# curl -s http://backend-s
 _root@N-20HEPF0Y79B9:/home/mandara/qa-test# cat test_integration.sh_
 #!/bin/bash
 
-# Variables
+#Variables
 FRONTEND_POD=$(kubectl get pods -l app=frontend -o jsonpath="{.items[0].metadata.name}")
 BACKEND_SERVICE_URL="http://backend-service:3000/greet"
 
-# Function to test connectivity from frontend to backend
+#Function to test connectivity from frontend to backend
 test_backend_connection() {
     echo "Testing connection from frontend to backend..."
 
@@ -56,7 +56,7 @@ test_backend_connection() {
     fi
 }
 
-# Run the test
+#Run the test
 test_backend_connection
 
 _root@N-20HEPF0Y79B9:/home/mandara/qa-test# ./test_integration.sh_
